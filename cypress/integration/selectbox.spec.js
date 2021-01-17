@@ -5,3 +5,6 @@ describe('Select Box', () => {
         cy.get('#preferred-interface').should('have.value', 'JavaScript API')
     })
 })
+
+
+//add more
