@@ -1,0 +1,21 @@
+{
+  "name": "cy-dashboard",
+  "version": "1.0.0",
+  "description": "cypress with dashboar service",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run-dashboard": "cypress run --record --key 49d13082-9e2b-4c68-a2d9-944c5f87f9b9"
+  },
+  "keywords": [
+    "cypress",
+    "dashboard"
+  ],
+  "author": "Ezequiel Dellavechia",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.2.1",
+    "prettier": "^2.2.1"
+  }
+}
