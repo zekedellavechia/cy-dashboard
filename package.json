@@ -6,7 +6,16 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:run-dashboard": "cypress run --record --key 49d13082-9e2b-4c68-a2d9-944c5f87f9b9"
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:edge": "cypress run --browser edge",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:run-dashboard": "cypress run --record --key 49d13082-9e2b-4c68-a2d9-944c5f87f9b9",
+    "cy:run-dashboard-chrome": "cypress run --browser chrome --record --key 49d13082-9e2b-4c68-a2d9-944c5f87f9b9",
+    "cy:run-dashboard-firefox": "cypress run --browser firefox --record --key 49d13082-9e2b-4c68-a2d9-944c5f87f9b9",
+    "cy:run-dashboard-edge": "cypress run --browser edge --record --key 49d13082-9e2b-4c68-a2d9-944c5f87f9b9",
+    "cy:run-dashboard-electron": "cypress run --browser electron --record --key 49d13082-9e2b-4c68-a2d9-944c5f87f9b9",
+    "start-jenkins-server": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "keywords": [
     "cypress",
