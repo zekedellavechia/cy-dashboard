@@ -110,3 +110,4 @@ To run it without UI:
 ```
 npm run cy:run
 ```
+------
