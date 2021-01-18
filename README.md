@@ -123,7 +123,7 @@ npm run cy:run
 
 ## Creating the project in Jenkins
 
-- Click in New item, add a name and select **Freestly project**.
+- Click in New item, add a name and select **Freestyle project**.
 - Put a general description.
 - Select **Advanced...** and click *Use custom project*, provide the path of the project and a display name.
 - In **Build Environment > Build select** choose *Execute Windows batch command* (if using windows) and specify the command (for example cy:run if you add it to scripts).
@@ -134,3 +134,10 @@ npm run cy:run
 - Named it (as example script). The you can add them inside choices (example add cy:run:chrome, cy:run:firefox) and provide a description (if you want).
 - Update the Execute shell by naming it **npm run %script%** (in windows, for Mac shell will be "$script"). Click on save.
 - Now we are able to Build with parameters.
+
+## Troubleshoot
+
+During the builds I had some problems with the encondig, I fixed them by 
+
+![image](https://user-images.githubusercontent.com/67669609/104863664-65151d80-5915-11eb-8457-90e103d9275e.png)
+
