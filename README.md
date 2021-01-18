@@ -137,7 +137,7 @@ npm run cy:run
 
 ## Troubleshoot
 
-During the builds I had some problems with the encondig, I fixed them by adding these two **environment variables** in system:
+- During the builds I had some problems with the encondig, I fixed them by adding these two **environment variables** in system:
 
 ```
 JAVA_TOOL_OPTIONS
@@ -146,6 +146,9 @@ JAVA_TOOL_OPTIONS
 LANG
 en_GB.UTF-8
 ```
+![image](https://user-images.githubusercontent.com/67669609/104863818-ea003700-5915-11eb-8042-bcccf8051764.png)
+
+
 - Also you have to add them in Jenkins global properties, **Jenkins -> Manage Jenkins -> Configure System ->Global properties**
 
 ![image](https://user-images.githubusercontent.com/67669609/104863664-65151d80-5915-11eb-8457-90e103d9275e.png)
