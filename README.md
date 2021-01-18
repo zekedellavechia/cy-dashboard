@@ -113,4 +113,5 @@ npm run cy:run
 ------
 # Jenkins integration
 
-//todo
+![image](https://user-images.githubusercontent.com/67669609/104862710-9c35ff80-5912-11eb-83d8-44a403493f3c.png)
+
