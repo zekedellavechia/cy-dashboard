@@ -115,4 +115,11 @@ npm run cy:run
 
 ![image](https://user-images.githubusercontent.com/67669609/104862746-b8d23780-5912-11eb-9d7d-6c3d2ba2be9f.png)
 
+## Setup Cypress Builds with Jenkins
+
+- Download **Generic Java package (.war)** LTS version and place it into your project folder.
+- Execute in the terminal the command: *java -jar jenkins.war -httpPort=8080 --enable-future-java*
+- Open Jenkins and open: localhost:8080.
+
+
 
