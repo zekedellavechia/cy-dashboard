@@ -128,4 +128,9 @@ npm run cy:run
 - Select **Advanced...** and click *Use custom project*, provide the path of the project and a display name.
 - In **Build Environment > Build select** choose *Execute Windows batch command* (if using windows) and specify the command (for example cy:run if you add it to scripts).
 
+## Parameterized builds
 
+- Go to general and select 'This project is paratermized' then choose **Add Paramater** > **Choice Parameter**.
+- Named it (as example script). The you can add them inside choices (example add cy:run:chrome, cy:run:firefox) and provide a description (if you want).
+- Update the Execute shell by naming it **npm run %script%** (in windows, for Mac shell will be "$script"). Click on save.
+- Now we are able to Build with parameters.
