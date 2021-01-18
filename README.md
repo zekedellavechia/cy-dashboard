@@ -113,4 +113,46 @@ npm run cy:run
 ------
 # Jenkins integration
 
-//todo
+![image](https://user-images.githubusercontent.com/67669609/104862746-b8d23780-5912-11eb-9d7d-6c3d2ba2be9f.png)
+
+## Setup Cypress Builds with Jenkins
+
+- Download **Generic Java package (.war)** LTS version and place it into your project folder.
+- Execute in the terminal the command: *java -jar jenkins.war -httpPort=8080 --enable-future-java*
+- Open Jenkins and open: localhost:8080.
+
+## Creating the project in Jenkins
+
+- Click in New item, add a name and select **Freestyle project**.
+- Put a general description.
+- Select **Advanced...** and click *Use custom project*, provide the path of the project and a display name.
+- In **Build Environment > Build select** choose *Execute Windows batch command* (if using windows) and specify the command (for example cy:run if you add it to scripts).
+
+## Parameterized builds
+
+- Go to general and select 'This project is paratermized' then choose **Add Paramater** > **Choice Parameter**.
+- Named it (as example script). The you can add them inside choices (example add cy:run:chrome, cy:run:firefox) and provide a description (if you want).
+- Update the Execute shell by naming it **npm run "%script%"** (in windows, for Mac shell will be "$script"). Click on save.
+- Now we are able to Build with parameters.
+
+![image](https://user-images.githubusercontent.com/67669609/104863881-1e73f300-5916-11eb-95ad-77e01d798652.png)
+![image](https://user-images.githubusercontent.com/67669609/104863922-41060c00-5916-11eb-94d8-2d55b4f3d8ea.png)
+
+## Troubleshoot
+
+- During the builds I had some problems with the encondig, I fixed them by adding these two **environment variables** in system:
+
+```
+JAVA_TOOL_OPTIONS
+-Dfile.encoding=UTF8
+
+LANG
+en_GB.UTF-8
+```
+![image](https://user-images.githubusercontent.com/67669609/104863818-ea003700-5915-11eb-8042-bcccf8051764.png)
+
+
+- Also you have to add them in Jenkins global properties, **Jenkins -> Manage Jenkins -> Configure System ->Global properties**
+
+![image](https://user-images.githubusercontent.com/67669609/104863664-65151d80-5915-11eb-8457-90e103d9275e.png)
+
