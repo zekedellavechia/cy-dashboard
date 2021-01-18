@@ -132,8 +132,11 @@ npm run cy:run
 
 - Go to general and select 'This project is paratermized' then choose **Add Paramater** > **Choice Parameter**.
 - Named it (as example script). The you can add them inside choices (example add cy:run:chrome, cy:run:firefox) and provide a description (if you want).
-- Update the Execute shell by naming it **npm run %script%** (in windows, for Mac shell will be "$script"). Click on save.
+- Update the Execute shell by naming it **npm run %"script%** (in windows, for Mac shell will be "$script"). Click on save.
 - Now we are able to Build with parameters.
+
+![image](https://user-images.githubusercontent.com/67669609/104863881-1e73f300-5916-11eb-95ad-77e01d798652.png)
+![image](https://user-images.githubusercontent.com/67669609/104863922-41060c00-5916-11eb-94d8-2d55b4f3d8ea.png)
 
 ## Troubleshoot
 
