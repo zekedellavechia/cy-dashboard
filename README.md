@@ -121,5 +121,11 @@ npm run cy:run
 - Execute in the terminal the command: *java -jar jenkins.war -httpPort=8080 --enable-future-java*
 - Open Jenkins and open: localhost:8080.
 
+## Creating the project in Jenkins
+
+- Click in New item, add a name and select **Freestly project**.
+- Put a general description.
+- Select **Advanced...** and click *Use custom project*, provide the path of the project and a display name.
+- In **Build Environment > Build select** choose *Execute Windows batch command* (if using windows) and specify the command (for example cy:run if you add it to scripts).
 
 
